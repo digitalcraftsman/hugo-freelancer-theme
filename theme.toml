@@ -1,0 +1,24 @@
+name = "Hugo Freelancer Theme"
+license = "Apache License 2.0"
+licenselink = "//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/LICENSE"
+description = "A one page HTML theme for freelancers."
+homepage = "//github.com/digitalcraftsman/hugo-freelancer-theme"
+tags = ["freenlancer", "portfolio"]
+features = ["portfolio"]
+
+[author]
+  name = "digitalcraftsman"
+  homepage = "//github.com/digitalcraftsman"
+
+# If porting an existing theme
+[[original]]
+  # Creator of the original Bootstrap theme
+  name = "David Miller"
+  homepage = "//www.ironsummitmedia.com/"
+  repo = "//github.com/IronSummitMedia/startbootstrap-freelancer"
+
+[[original]]
+  # Creator of the ported Jekyll theme
+  name = "Jerome Lachaud"
+  homepage = "//jeromelachaud.com/"
+  repo = "//github.com/jeromelachaud/freelancer-theme"
