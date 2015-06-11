@@ -4,7 +4,8 @@ licenselink = "//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/L
 description = "A one page HTML theme for freelancers."
 homepage = "//github.com/digitalcraftsman/hugo-freelancer-theme"
 tags = ["freenlancer", "portfolio"]
-features = ["portfolio"]
+features = ["responsive", "contact form", "portfolio", "substitutable strings"]
+min_version = 0.13
 
 [author]
   name = "digitalcraftsman"
