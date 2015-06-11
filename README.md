@@ -29,7 +29,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Getting started
 
-After installing the Freelancer Theme successfullyi it requires a just a few more steps to get your site running.
+After installing the Freelancer Theme successfully it requires a just a few more steps to get your site running.
 
 
 ### The config file
@@ -57,9 +57,9 @@ description: Use this area of the page to describe your project. The icon above 
 
 Copy the folder [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/dev/examples/projects) inside the `data` folder in the root directory of your site. Let's make some changes to show your work.
 
-Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise the corresponding modal can't be rendered.
+Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise, the corresponding modal can't be rendered.
 
-Furthermore you can use Markdown syntax for URLs like here `[text](//url.to/source)` in the description. Copy the image of an project inside `static/img/portfolio` and **just** enter the filename.
+Furthermore, you can use Markdown syntax for URLs like here `[text](//url.to/source)` in the description. Copy the image of an project inside `static/img/portfolio` and **just** enter the filename.
 
 
 ### Make the contact form working
@@ -68,14 +68,14 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 
 1. Enter your email address under 'email' in the config.toml
 2. Upload the generated site to your server
-3. Send a dummy email youself to confirm your account
+3. Send a dummy email yourself to confirm your account
 4. Click the confirm link in the email from www.formspree.io
 5. You're done. Happy mailing!
 
 
 ### Nearly finished
 
-In order to see your site in action, run Hugo's builtin local server. 
+In order to see your site in action, run Hugo's built-in local server. 
 
     $ hugo server -w
 
