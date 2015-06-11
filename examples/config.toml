@@ -1,0 +1,107 @@
+# site settings
+baseurl = "http://my-awesome-site.com/"
+languageCode = "en-us"
+title = "Hugo Freelancer Theme"
+theme = "hugo-freelancer-theme"
+
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Mr. Hugo"
+	description = "My awesome description"
+
+	# Since this template is static, the contact form uses www.formspree.io as a 
+	# proxy. The form makes a POST request to their servers to send the actual 
+	# email. Visitors can send up to a 1000 email each month for free.
+    # 
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email youself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!  
+    email = "your@email.com"
+
+	[params.navigation]
+		brand = "Mr. Hugo's Portfolio"
+
+
+	[params.header]
+		# Copy your own image into ./static/img/ if you wish
+		image = "profile.png"
+		name = "Mr. Hugo"
+		subtitle = "Blogger - Programmer - Gopher"
+
+
+	[params.portfolio]
+		title = "Portfolio"
+
+		[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttontext = "Close"
+
+
+	[params.about]
+        title = "About"
+        # The about text is splitted into a left and right column
+        left = "Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."
+        right = "Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!"
+
+        [params.about.button]
+            text = "Download"
+            link = "//github.com"
+            icon = "download"
+
+
+    [params.contact]
+        title = "Contact"
+
+        # 'errors' defines error messages for invalid inputs 
+        [params.contact.form.name]
+            text = "Name"
+            error = "Please enter your name."
+
+        [params.contact.form.email]
+            text = "Email Adress"
+            error = "Please enter your email address."
+
+        [params.contact.form.phone]
+            text = "Phone Number"
+            error = "Please enter your phone number."
+
+        [params.contact.form.message]
+            text = "Message"
+            error = "Please enter a message."
+
+        [params.contact.form.button]
+            text = "Send"
+
+
+    [params.footer]
+        copyright = "Published under the Apache License 2.0. Powered by [Hugo](//gohugo.io)."
+
+        [params.footer.location]
+        	title = "Location"
+        	# Postal address (add as many lines as necessary)
+    		address = ["3481 Melrose Place", "Beverly Hills, CA 90210"]
+
+        [params.footer.social]
+			title = "Around the web"
+            # Social networks usernames (for example: google-plus, flickr etc.)
+    		# Look at www.fortawesome.github.io/Font-Awesome/icons
+            networks = [
+            	["github", "//github.com/spf13/hugo"],
+            	["stack-overflow", "//stackoverflow.com/questions/tagged/hugo"]
+           	]
+
+        [params.footer.credits]
+            title = "About Freelancer"
+            text = "Freelance is a free to use, open source Bootstrap theme created by [Start Bootstrap](//startbootstrap.com)."
