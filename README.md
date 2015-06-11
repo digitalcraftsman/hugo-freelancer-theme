@@ -78,7 +78,7 @@ In order to see your site in action, run Hugo's builtin local server.
 
     $ hugo server -w
 
-Now enter `localhost:1313/``in the address bar of your browser.
+Now enter `localhost:1313` in the address bar of your browser.
 
 
 ## Contributing
