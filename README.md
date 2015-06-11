@@ -78,7 +78,7 @@ In order to see your site in action, run Hugo's builtin local server.
 
     $ hugo server -w
 
-Now you should be ready to deploy your site.
+Now enter `localhost:1313/``in the address bar of your browser.
 
 
 ## Contributing
