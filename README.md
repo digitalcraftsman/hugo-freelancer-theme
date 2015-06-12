@@ -16,6 +16,7 @@ Freelancer Theme is a one page freelancer portfolio based on the [original Boots
     - [Nearly finished](#nearly-finished)
 - [Contributing](#contributing)
 - [License](#license)
+- [Annotations](#annotations)
 
 
 ## Installation
@@ -49,13 +50,13 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml)
 2. Upload the generated site to your server
 3. Send a dummy email yourself to confirm your account
-4. Click the confirm link in the email from www.formspree.io
+4. Click the confirm link in the email from formspree.io
 5. You're done. Happy mailing!
 
 
 ### Add social networks
 
-In the footer you can link some of your social network accounts. Search for `[params.footer.social]` at the end of bottom. The configuration should look similar like this one:
+In the footer you can link some of your social network accounts. Search for `[params.footer.social]` at the bottom of the file. The configuration should look similar like this one:
 
 ```toml
 networks = [
@@ -106,4 +107,7 @@ Did you found a bug or got an idea for a new feature? Feel free to use the [issu
 
 This theme is released under the Apache License 2.0 For more information read the [License](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/LICENSE).
 
-Thanks to [Steve Francia](//github.com/spf13) for creating Hugo.
+
+## Annotations
+
+Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
