@@ -64,7 +64,7 @@ networks = [
 ]
 ```
 
-For each now line define a new array in `networks`. The first index represents the shown icon name of the social network (or the the CSS class of the link). Search [here](fortawesome.github.io/Font-Awesome/icons) if you need a certain icon. The last index is the link to your account.
+For each now line define a new array in `networks`. The first index represents the shown icon name of the social network (or the the CSS class of the link). Search [here](fortawesome.github.io/Font-Awesome/icons) if you need a particular icon. The last index is the link to your account.
 
 
 ### Create your portfolio
