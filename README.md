@@ -4,14 +4,16 @@ Freelancer Theme is a one page freelancer portfolio based on the [original Boots
 
 ![Hugo Freelancer Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-freelancer-theme/dev/images/screenshot.png)
 
+
 ## Contents
 
 - [Installation](#installation)
 - [Getting started](#getting-started)
-  - [The config file](#the-config-file)
-  - [Create your portfolio](#create-your-portfolio)
-  - [Make the contact form working](#make-the-contact-form-working)
-  - [Nearly finished](#nearly-finished)
+    - [The config file](#the-config-file)
+    - [Make the contact form working](#make-the-contact-form-working)
+    - [Add social networks](#add-social-networks)
+    - [Create your portfolio](#create-your-portfolio)
+    - [Nearly finished](#nearly-finished)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -34,16 +36,40 @@ After installing the Freelancer Theme successfully it requires a just a few more
 
 ### The config file
 
-Take a look inside the [`example`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/dev/examples) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml).
-It contains detailed information about the setup of the contact form ([see below](#make-the-contact-form-working)) and the customization of all strings of this template. 
+Take a look inside the [`examples`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/dev/examples) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml).
+It contains detailed information about the setup of the contact form ([or see below](#make-the-contact-form-working)) and the customization of all strings in this theme. 
 
-To use it, copy it in the root folder of your Hugo site.
+To use it, copy [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like.
+
+
+### Make the contact form working
+
+Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Your visitors can send up to a thousand emails each month for free to you. Follow the steps below:
+
+1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml)
+2. Upload the generated site to your server
+3. Send a dummy email yourself to confirm your account
+4. Click the confirm link in the email from www.formspree.io
+5. You're done. Happy mailing!
+
+
+### Add social networks
+
+In the footer you can link some of your social network accounts. Search for `[params.footer.social]` at the end of bottom. The configuration should look similar like this one:
+
+```toml
+networks = [
+    ["github", "//github.com/spf13/hugo"],
+    ["stack-overflow", "//stackoverflow.com/questions/tagged/hugo"]
+]
+```
+
+For each now line define a new array in `networks`. The first index represents the shown icon name of the social network (or the the CSS class of the link). Search [here](fortawesome.github.io/Font-Awesome/icons) if you need a certain icon. The last index ist just the link to your account.
 
 
 ### Create your portfolio
 
-Beside the config file there is another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/dev/examples/projects) which hosts the files that will appear
-as your projects in the portfolio section. Such a project file might look like [this](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/projects/2014-07-18-project-1.yaml):
+Beside the config file, there is another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/dev/examples/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/projects/2014-07-18-project-1.yaml) written in YAML:
 
 ```yaml
 modalID: 1
@@ -60,17 +86,6 @@ Copy the folder [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme
 Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise, the corresponding modal can't be rendered.
 
 Furthermore, you can use Markdown syntax for URLs like here `[text](//url.to/source)` in the description. Copy the image of an project inside `static/img/portfolio` and **just** enter the filename.
-
-
-### Make the contact form working
-
-Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Your visitors can send up to a thousand emails each month for free to you. Follow the steps below:
-
-1. Enter your email address under 'email' in the config.toml
-2. Upload the generated site to your server
-3. Send a dummy email yourself to confirm your account
-4. Click the confirm link in the email from www.formspree.io
-5. You're done. Happy mailing!
 
 
 ### Nearly finished

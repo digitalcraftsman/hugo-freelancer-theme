@@ -96,7 +96,7 @@ theme = "hugo-freelancer-theme"
         [params.footer.social]
 			title = "Around the web"
             # Social networks usernames (for example: google-plus, flickr etc.)
-    		# Look at www.fortawesome.github.io/Font-Awesome/icons
+    		# Look at fortawesome.github.io/Font-Awesome/icons/
             networks = [
             	["github", "//github.com/spf13/hugo"],
             	["stack-overflow", "//stackoverflow.com/questions/tagged/hugo"]
