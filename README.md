@@ -40,17 +40,17 @@ After installing the Freelancer Theme successfully it requires a just a few more
 Take a look inside the [`examples`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/dev/examples) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml).
 It contains detailed information about the setup of the contact form ([or see below](#make-the-contact-form-working)) and the customization of all strings in this theme. 
 
-To use it, copy [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like.
+To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like.
 
 
 ### Make the contact form working
 
-Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Your visitors can send up to a thousand emails each month for free to you. Follow the steps below:
+Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
 1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/dev/examples/config.toml)
 2. Upload the generated site to your server
 3. Send a dummy email yourself to confirm your account
-4. Click the confirm link in the email from formspree.io
+4. Click the confirm link in the email from [formspree.io](//formspree.io/)
 5. You're done. Happy mailing!
 
 
