@@ -18,15 +18,15 @@
                         <p>{{ .description | markdownify }}</p>
                         <ul class="list-inline item-details">
                             <li>{{ with $.Site.Params.portfolio.modal.client }}{{.}}{{ end }}:
-                                <strong><a href="http://startbootstrap.com">{{ .client }}</a>
+                                <strong><a href="{{ .clientLink }}">{{ .client }}</a>
                                     </strong>
                             </li>
                             <li>{{ with $.Site.Params.portfolio.modal.date }}{{.}}{{ end }}:
-                                <strong><a href="http://startbootstrap.com">{{ .date }}</a>
+                                <strong><a href="#">{{ .date }}</a>
                                     </strong>
                             </li>
                             <li>{{ with $.Site.Params.portfolio.modal.category }}{{.}}{{ end }}:
-                                <strong><a href="http://startbootstrap.com">{{ .category }}</a>
+                                <strong><a href="#">{{ .category }}</a>
                                     </strong>
                             </li>
                         </ul>
