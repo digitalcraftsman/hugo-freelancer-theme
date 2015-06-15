@@ -56,7 +56,7 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 
 ### Add social networks
 
-In the footer you can link some of your social network accounts. Search for `[params.footer.social.networks]` at the bottom of the file. The configuration should look similar like this one:
+In the footer you can link some of your social network accounts. Search for `[params.footer.social.networks]` at the bottom of the file. The configuration should look similar to this one:
 
 ```toml
 [[params.footer.social.networks]]
