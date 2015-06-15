@@ -20,7 +20,7 @@
                     <ul class="list-inline">
                         {{ range .Site.Params.footer.social.networks }}
                             <li>
-                                <a href="{{ index . 1 }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ index . 0 }}"></i></a>
+                                <a href="{{ .link }}" class="btn-social btn-outline"><i class="fa fa-fw {{ .icon }}"></i></a>
                             </li>
                         {{ end }}
                     </ul>

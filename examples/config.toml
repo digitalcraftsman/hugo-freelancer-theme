@@ -1,4 +1,4 @@
-# site settings
+# Site settings
 baseurl = "http://my-awesome-site.com/"
 languageCode = "en-us"
 title = "Hugo Freelancer Theme"
@@ -15,17 +15,17 @@ theme = "hugo-freelancer-theme"
 	name = "Mr. Hugo"
 	description = "My awesome description"
 
-	# Since this template is static, the contact form uses www.formspree.io as a
-	# proxy. The form makes a POST request to their servers to send the actual
+	# Since this template is static, the contact form uses www.formspree.io as a 
+	# proxy. The form makes a POST request to their servers to send the actual 
 	# email. Visitors can send up to a 1000 email each month for free.
-    #
+    # 
     # What you need to do for the setup?
     #
     # - set your email address under 'email' below
     # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
+    # - send a dummy email youself to confirm your account
     # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
+    # - you're done. Happy mailing!  
     email = "your@email.com"
 
 	[params.navigation]
@@ -33,13 +33,17 @@ theme = "hugo-freelancer-theme"
 
 
 	[params.header]
-		# Copy your own image into ./static/img/ if you wish
+		# Copy your own image into './static/img/'' if you wish
 		image = "profile.png"
 		name = "Mr. Hugo"
 		subtitle = "Blogger - Programmer - Gopher"
 
 
 	[params.portfolio]
+        # All projects defined in their own files. You can find example projects
+        # at 'examples/projects'. Copy the 'projects' folder into the 'data' directory
+        # at the root of this Hugo site.
+        # For more informtion take a look at the README.        
 		title = "Portfolio"
 
 		[params.portfolio.modal]
@@ -64,7 +68,7 @@ theme = "hugo-freelancer-theme"
     [params.contact]
         title = "Contact"
 
-        # 'errors' defines error messages for invalid inputs
+        # 'error' defines error messages for invalid inputs 
         [params.contact.form.name]
             text = "Name"
             error = "Please enter your name."
@@ -95,12 +99,17 @@ theme = "hugo-freelancer-theme"
 
         [params.footer.social]
 			title = "Around the web"
-            # Social networks usernames (for example: google-plus, flickr etc.)
-    		# Look at fortawesome.github.io/Font-Awesome/icons/
-            networks = [
-            	["github", "//github.com/spf13/hugo"],
-            	["stack-overflow", "//stackoverflow.com/questions/tagged/hugo"]
-           	]
+            # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+            # for more icons. The icons are represented by their corresponding
+            # CSS class.
+            [[params.footer.social.networks]]
+                icon = "fa-github"
+                link = "//github.com/spf13/hugo"
+
+            [[params.footer.social.networks]]
+            	icon = "fa-stack-overflow"
+                link=  "//stackoverflow.com/questions/tagged/hugo"
+
 
         [params.footer.credits]
             title = "About Freelancer"
