@@ -56,16 +56,15 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 
 ### Add social networks
 
-In the footer you can link some of your social network accounts. Search for `[params.footer.social]` at the bottom of the file. The configuration should look similar like this one:
+In the footer you can link some of your social network accounts. Search for `[params.footer.social.networks]` at the bottom of the file. The configuration should look similar like this one:
 
 ```toml
-networks = [
-    ["github", "//github.com/spf13/hugo"],
-    ["stack-overflow", "//stackoverflow.com/questions/tagged/hugo"]
-]
+[[params.footer.social.networks]]
+    icon = "fa-github"
+    link = "//github.com/spf13/hugo"
 ```
 
-For each now line define a new array in `networks`. The first index represents the shown icon name of the social network (or the the CSS class of the link). Search [here](//fortawesome.github.io/Font-Awesome/icons) if you need a particular icon. The last index is the link to your account.
+The variable 'icon' represents the shown icon of the social network. It's a CSS class of Fontawesome's popular icon font. Search [here](//fortawesome.github.io/Font-Awesome/icons) if you need a particular icon.
 
 
 ### Create your portfolio
