@@ -68,7 +68,7 @@ The variable 'icon' represents the shown icon of the social network. It's a CSS 
 
 ### Create your portfolio
 
-Beside the config file, there is another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/projects/2014-07-18-project-1.yaml) written in YAML:
+Beside the config file, there is in `data` another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/data/projects/2014-07-18-project-1.yaml) written in YAML:
 
 ```yaml
 modalID: 1
@@ -81,7 +81,7 @@ category: Web Development
 description: Use this area of the page to describe your project. The icon above is part of a free icon set by [Flat Icons](//sellfy.com/p/8Q9P/jV3VZ/"). On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
 ```
 
-Copy the folder [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/projects) inside the `data` folder in the root directory of your site. Let's make some changes to show your work.
+Copy the folder [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) inside the `data` folder in the **root** directory of your site. Let's make some changes to show your work.
 
 Pay attention to the `modalID`. It must be a unique integer and be incremented with each new project you want to add to the portfolio. Otherwise, the corresponding modal can't be rendered.
 
