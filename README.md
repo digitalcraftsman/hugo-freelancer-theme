@@ -68,7 +68,7 @@ The variable 'icon' represents the shown icon of the social network. It's a CSS 
 
 ### Create your portfolio
 
-Beside the config file, there is in `data` another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/data/projects/2014-07-18-project-1.yaml) written in YAML:
+Beside the config file, there is in `data` another subfolder called [`projects`](//github.com/digitalcraftsman/hugo-freelancer-theme/tree/master/exampleSite/data/projects) which hosts the files that will appear as your projects in the portfolio section. Such a project file might look like [this one](//github.com/digitalcraftsman/hugo-freelancer-theme/blob/master/exampleSite/data/projects/2014-07-13-project-1.yaml) written in YAML:
 
 ```yaml
 modalID: 1
