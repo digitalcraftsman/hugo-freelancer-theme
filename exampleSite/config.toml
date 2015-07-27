@@ -74,7 +74,7 @@ theme = "hugo-freelancer-theme"
             error = "Please enter your name."
 
         [params.contact.form.email]
-            text = "Email Adress"
+            text = "Email Address"
             error = "Please enter your email address."
 
         [params.contact.form.phone]
