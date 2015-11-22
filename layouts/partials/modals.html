@@ -18,16 +18,13 @@
                         <p>{{ .description | markdownify }}</p>
                         <ul class="list-inline item-details">
                             <li>{{ with $.Site.Params.portfolio.modal.client }}{{.}}{{ end }}:
-                                <strong><a href="{{ .clientLink }}">{{ .client }}</a>
-                                    </strong>
+                                <strong><a href="{{ .clientLink }}">{{ .client }}</a></strong>
                             </li>
                             <li>{{ with $.Site.Params.portfolio.modal.date }}{{.}}{{ end }}:
-                                <strong><a href="#">{{ .date }}</a>
-                                    </strong>
+                                <strong>{{ .date }}</strong>
                             </li>
                             <li>{{ with $.Site.Params.portfolio.modal.category }}{{.}}{{ end }}:
-                                <strong><a href="#">{{ .category }}</a>
-                                    </strong>
+                                <strong>{{ .category }}</strong>
                             </li>
                         </ul>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttontext }}{{.}}{{ end }}</button>
