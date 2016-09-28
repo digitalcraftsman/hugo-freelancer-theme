@@ -5,25 +5,10 @@ Freelancer Theme is a one page freelancer portfolio based on the [original Boots
 ![Hugo Freelancer Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-freelancer-theme/master/images/screenshot.png)
 
 
-## Contents
-
-- [Installation](#installation)
-- [Getting started](#getting-started)
-    - [The config file](#the-config-file)
-    - [Make the contact form working](#make-the-contact-form-working)
-    - [Add social networks](#add-social-networks)
-    - [Create your portfolio](#create-your-portfolio)
-    - [Nearly finished](#nearly-finished)
-- [Contributing](#contributing)
-- [License](#license)
-- [Annotations](#annotations)
-
-
 ## Installation
 
 Inside the folder of your Hugo site run:
 
-    $ mkdir themes
     $ cd themes
     $ git clone https://github.com/digitalcraftsman/hugo-freelancer-theme
 
@@ -92,9 +77,9 @@ Furthermore, you can use Markdown syntax for URLs like here `[text](//url.to/sou
 
 In order to see your site in action, run Hugo's built-in local server. 
 
-    $ hugo server -w
+    $ hugo server
 
-Now enter `localhost:1313` in the address bar of your browser.
+Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
 
 ## Contributing
