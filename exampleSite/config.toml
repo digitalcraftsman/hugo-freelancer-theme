@@ -28,6 +28,10 @@ theme = "hugo-freelancer-theme"
     # - you're done. Happy mailing!
     email = "your@email.com"
 
+    # Custom assets
+	custom_css = []
+	custom_js  = []
+
     [params.navigation]
         brand = "Mr. Hugo's Portfolio"
 

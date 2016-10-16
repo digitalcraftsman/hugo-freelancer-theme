@@ -11,3 +11,7 @@
 <script src="{{ .Site.BaseURL }}js/contact_me.js"></script>
 {{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
 <script src="{{ .Site.BaseURL }}js/freelancer.js"></script>
+{{ "<!-- Custom JavaScript files -->" | safeHTML }}
+{{ range .Site.Params.custom_js }}
+<script src="{{ . | absURL }}"></script>
+{{ end }}
