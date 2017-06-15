@@ -10,6 +10,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <form  action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}" method="POST" name="sentMessage" id="contactForm" novalidate>
+                    <input type="hidden" name="_language" value="{{ with .Site.LanguageCode }}{{.}}{{ end }}" />
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}</label>
