@@ -20,7 +20,7 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}</label>
-                            <input type="email" name="_replyto" class="form-control" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" required data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}">
+                            <input type="email" name="_replyto" class="form-control" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email" required data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}" data-validation-validemail-message="{{ with .Site.Params.contact.form.email.invalid }}{{.}}{{ end }}" >
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
