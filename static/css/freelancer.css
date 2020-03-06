@@ -48,13 +48,19 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
     content: "\f005";
     display: inline-block;
     position: relative;
     top: -.8em;
     padding: 0 .25em;
-    font-family: FontAwesome;
     font-size: 2em;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 hr.star-light {
