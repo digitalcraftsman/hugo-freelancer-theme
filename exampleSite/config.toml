@@ -66,7 +66,7 @@ theme = "hugo-freelancer-theme"
         [params.about.button]
             text = "Download theme"
             link = "//github.com/digitalcraftsman/hugo-freelancer-theme/archive/master.zip"
-            icon = "download"
+            icon = "fa fa-download"
 
 
     [params.contact]
@@ -107,11 +107,11 @@ theme = "hugo-freelancer-theme"
             # for more icons. The icons are represented by their corresponding
             # CSS class.
             [[params.footer.social.networks]]
-                icon = "fa-github"
+                icon = "fab fa-github"
                 link = "//github.com/spf13/hugo"
 
             [[params.footer.social.networks]]
-                icon = "fa-stack-overflow"
+                icon = "fab fa-stack-overflow"
                 link=  "//stackoverflow.com/questions/tagged/hugo"
 
 
