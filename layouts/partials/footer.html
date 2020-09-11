@@ -1,51 +1,47 @@
 {{ "<!-- Footer -->" | safeHTML }}
-<footer class="text-center">
-    <div class="footer-above">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>{{ with .Site.Params.footer.location.title }}{{.}}{{ end }}</h3>
-
-                    {{ with .Site.Params.footer.location.address }}
-                        <p>
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">{{ with .Site.Params.footer.location.title }}{{.}}{{ end }}</h4>
+                         {{ with .Site.Params.footer.location.address }}
+                        <p class="lead mb-0">
                             {{ range $i, $e := $.Site.Params.footer.location.address }}
                                 {{ if $i }}<br>{{ end }}
                                 {{ $e }}
                             {{ end }}
                         </p>
                     {{ end }}
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>{{ with .Site.Params.footer.social.title }}{{.}}{{ end }}</h3>
-                    <ul class="list-inline">
-                        {{ range .Site.Params.footer.social.networks }}
-                            <li>
-                                <a href="{{ .link }}" class="btn-social btn-outline"><i class="fa fa-fw {{ .icon }}"></i></a>
-                            </li>
-                        {{ end }}
-                    </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>{{ with .Site.Params.footer.credits.title }}{{.}}{{ end }}</h3>
-                    <p>{{ with .Site.Params.footer.credits.text }}{{ . | markdownify }}{{ end }}</p>
-                </div>
             </div>
-        </div>
-    </div>
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
-                </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">{{ with .Site.Params.footer.social.title }}{{.}}{{ end }}</h4>
+                {{ range .Site.Params.footer.social.networks }}
+                          
+                                <a href="{{ .link }}" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-fw {{ .icon }}"></i></a>
+                          
+                        {{ end }}
+
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">{{ with .Site.Params.footer.credits.title }}{{.}}{{ end }}</h4>
+                <p class="lead mb-0">
+                    {{ with .Site.Params.footer.credits.text }}{{ . | markdownify }}{{ end }}
+                    
+                </p>
             </div>
         </div>
     </div>
 </footer>
-
-{{ "<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->" | safeHTML }}
-<div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
+<!-- Copyright Section-->
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</small></div>
 </div>
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+<div class="scroll-to-top d-lg-none position-fixed">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     <head>
-        {{ partial "head.html" . }}
+{{ partial "head.html" . }}
     </head>
-    <body id="page-top" class="index">
+    <body id="page-top">
 
-        {{ partial "nav.html" . }}
+{{ partial "nav.html" . }}
 
-        {{ partial "header.html" . }}
-        {{ partial "portfolio-grid.html" . }}
-        {{ partial "about.html" . }}
-        {{ partial "contact.html" . }}
+{{ partial "header.html" . }}
+{{ partial "portfolio-grid.html" . }}
+{{ partial "about.html" . }}
+{{ partial "contact.html" . }}
 
-        {{ partial "footer.html" . }}
-        {{ partial "modals.html" . }}
-        {{ partial "js.html" . }}
+{{ partial "footer.html" . }}
+{{ partial "modals.html" . }}
+{{ partial "js.html" . }}
 
     </body>
 </html>

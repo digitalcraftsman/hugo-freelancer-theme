@@ -1,25 +1,28 @@
-{{ "<!-- Portfolio Grid Section -->" | safeHTML }}
-<section id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>{{ with .Site.Params.portfolio.title }}{{.}}{{end}}</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            {{ range $.Site.Data.projects }}
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal{{ .modalID }}" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
+
+
+<section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ with .Site.Params.portfolio.title }}{{.}}{{end}}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row">
+                    {{ range $.Site.Data.projects }}
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal{{ .modalID }}">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/{{ .img }}" alt="" />
                         </div>
                     </div>
-                    <img src="img/portfolio/{{ .img }}" class="img-responsive">
-                </a>
+                    {{ end }}
+
+                </div>
             </div>
-            {{ end }}
-        </div>
-    </div>
-</section>
+        </section>
