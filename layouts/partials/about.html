@@ -1,24 +1,24 @@
-{{ "<!-- About Section -->" | safeHTML }}
-<section class="success" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>{{ with .Site.Params.about.title }}{{.}}{{ end }}</h2>
-                <hr class="star-light">
+ <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">{{ with .Site.Params.about.title }}{{.}}{{ end }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto"><p class="lead">{{ with .Site.Params.about.left }}{{ . | markdownify }}{{ end }}</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">{{ with .Site.Params.about.right }}{{ . | markdownify }}{{ end }}</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="{{ with .Site.Params.about.button.link }}{{.}}{{ end }}">
+                        <i class="fas fa-{{ with .Site.Params.about.button.icon }}{{.}}{{end}} mr-2"></i>
+                        {{ with .Site.Params.about.button.text }}{{ . }}{{ end }
+                    </a>
+                </div>
             </div>
-        </div>
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
-            <p>{{ with .Site.Params.about.left }}{{ . | markdownify }}{{ end }}</p>
-        </div>
-            <div class="col-lg-4">
-                <p>{{ with .Site.Params.about.right }}{{ . | markdownify }}{{ end }}</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="{{ with .Site.Params.about.button.link }}{{.}}{{ end }}" class="btn btn-lg btn-outline">
-                    <i class="fa fa-{{ with .Site.Params.about.button.icon }}{{.}}{{end}}"></i> {{ with .Site.Params.about.button.text }}{{ . }}{{ end }}
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>

@@ -1,15 +1,23 @@
-{{ "<!-- Header -->" | safeHTML }}
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ else }}profile.png{{ end }}" alt="">
-                <div class="intro-text">
-                    <span class="name">{{ with .Site.Params.header.name }}{{ . }}{{ end }}</span>
-                    <hr class="star-light">
-                    <span class="skills">{{ with .Site.Params.header.subtitle }}{{ . }}{{ end }}</span>
-                </div>
-            </div>
+{{ "<!-- Masthead-->" | safeHTML }}
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+    {{ "<!-- Masthead Avatar Image-->" | safeHTML }}
+   
+        <img class="masthead-avatar mb-5" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ else }}profile.png{{ end }}" alt="" />
+        {{ "<!-- Masthead Heading-->" | safeHTML }}
+      
+        <h1 class="masthead-heading text-uppercase mb-0">{{ with .Site.Params.header.name }}{{ . }}{{ end }}</h1>
+        {{ "<!-- Icon Divider-->" | safeHTML }}
+        
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
         </div>
+        {{ "<!-- Masthead Subheading-->" | safeHTML }}
+  
+        <p class="masthead-subheading font-weight-light mb-0">{{ with .Site.Params.header.subtitle }}{{ . }}{{ end }}</p>
     </div>
 </header>
+        
+                
