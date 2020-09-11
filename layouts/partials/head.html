@@ -6,12 +6,12 @@
 		<title>{{ .Site.Title }}</title>
 		
 		{{ "<!-- Favicon-->" | safeHTML }}
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="img/{{ with .Site.Params.head.icon }}{{ . }}{{ else }}favicon.ico{{ end }}" />
 		{{ "<!-- Font Awesome icons (free version)-->" | safeHTML }}
 		<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 		{{ "<!-- Google fonts-->" | safeHTML }}
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" type="text/css" />
 		{{ "<!-- Core theme CSS (includes Bootstrap)-->" | safeHTML }}
 		<link href="css/styles.css" rel="stylesheet" />
 
