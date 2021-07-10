@@ -27,7 +27,7 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}</label>
-                            <input type="tel" class="form-control" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}" id="phone" required data-validation-required-message="{{ with .Site.Params.contact.form.phone.error }}{{.}}{{ end }}">
+                            <input type="tel" name="phone" class="form-control" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}" id="phone" required data-validation-required-message="{{ with .Site.Params.contact.form.phone.error }}{{.}}{{ end }}">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
